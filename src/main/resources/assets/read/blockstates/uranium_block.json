@@ -1,0 +1,5 @@
+{
+	"variants": {
+		"": { "model": "read:block/uranium_block" }
+	}
+}

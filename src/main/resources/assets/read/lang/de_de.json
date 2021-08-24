@@ -1,0 +1,40 @@
+{
+	//Namen der Items
+	"item.read.copper_ingot": "Kupferbarren",
+	"item.read.aluminum_ingot": "Aluminium",
+	"item.read.lead_ingot": "Bleibarren",
+	"item.read.uranium_ingot": "Uranbarren",
+	"item.read.copper_nugget": "Kupferklumpen",
+	"item.read.aluminum_nugget": "Aluminiumklumpen",
+	"item.read.lead_nugget": "Bleiklumpen",
+	"item.read.uranium_nugget": "Uransplitter",
+	
+	//Namen der Erze
+	"block.read.copper_ore": "Kupfererz",
+	"block.read.aluminum_ore": "Bauxit",
+	"block.read.lead_ore": "Bleierz",
+	"block.read.uranium_ore": "Uran",
+	
+	//Namen der Blöcke
+	"block.read.copper_block": "Block aus Kupfer",
+	"block.read.aluminum_block": "Block aus Aluminium",
+	"block.read.lead_block": "Block aus Blei",
+	"block.read.uranium_block": "Block aus Uran",
+	
+	//Namen der Rüstungsteile
+	"item.read.hazmat_suit_helmet": "Gasmaske",
+	"item.read.hazmat_suit_chest": "Hazmat Brustplatte",
+	"item.read.hazmat_suit_leggings": "Hazmat Hose",
+	"item.read.hazmat_suit_shoes": "Hazmat Schuhe",
+	
+	//"Energycoin" Namen
+	"item.read.re_100_Scoin": "100RE",
+	"item.read.re_1k_coin": "1KRE",
+	"item.read.re_10k_coin": "10KRE",
+	"item.read.re_100k_coin": "100KRE",
+	"item.read.re_1m_coin": "1MRE",
+	
+	//Spezielle Namen
+	"itemGroup.read": "RexisEnergyAndDecor",
+	"effect.read.radiation": "Radioaktivitaet"
+}

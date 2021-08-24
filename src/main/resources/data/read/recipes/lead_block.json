@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"CCC",
+		"CCC",
+		"CCC"
+	],
+	"key": {
+		"C": {
+			"tag": "forge:ingots/lead"
+		}
+	},
+	"result": {
+		"item": "read:lead_block",
+		"count": 1
+	}
+}

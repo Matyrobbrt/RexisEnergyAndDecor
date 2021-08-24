@@ -1,0 +1,40 @@
+{
+	// These are the Item names
+	"item.read.copper_ingot": "Copper Ingot",
+	"item.read.aluminum_ingot": "Aluminum",
+	"item.read.lead_ingot": "Lead Ingot",
+	"item.read.uranium_ingot": "Uranium Ingot",
+	"item.read.copper_nugget": "Copper Nugget",
+	"item.read.aluminum_nugget": "Aluminum Nugget",
+	"item.read.lead_nugget": "Lead Nugget",
+	"item.read.uranium_nugget": "Uranium Shard",
+	
+	// These are the Ore names
+	"block.read.copper_ore": "Copper Ore",
+	"block.read.aluminum_ore": "Bauxite",
+	"block.read.lead_ore": "Lead Ore",
+	"block.read.uranium_ore": "Uranium",
+	
+	//These are the Block names
+	"block.read.copper_block": "Block of Copper",
+	"block.read.aluminum_block": "Block of Aluminum",
+	"block.read.lead_block": "Block of Lead",
+	"block.read.uranium_block": "Block of Uranium",
+	
+	//This are the Armour names
+	"item.read.hazmat_suit_helmet": "Gas Mask",
+	"item.read.hazmat_suit_chest": "Hazmat Chestplate",
+	"item.read.hazmat_suit_leggings": "Hazmat Leggings",
+	"item.read.hazmat_suit_shoes": "Hazmat Shoes",
+	
+	//"Energycoin" names
+	"item.read.re_100_coin": "100RE",
+	"item.read.re_1k_coin": "1KRE",
+	"item.read.re_10k_coin": "10KRE",
+	"item.read.re_100k_coin": "100KRE",
+	"item.read.re_1m_coin": "1MRE",
+	
+	//Special Names
+	"itemGroup.read": "RexisEnergyAndDecor",
+	"effect.read.radiation": "Radiation"
+}

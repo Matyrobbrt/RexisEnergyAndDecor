@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"NNN",
+		"NNN",
+		"NNN"
+	],
+	"key": {
+		"N": {
+			"tag": "forge:nuggets/aluminum"
+		}
+	},
+	"result": {
+		"item": "read:aluminum_ingot",
+		"count": 1
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"CCC",
+		"CCC",
+		"CCC"
+	],
+	"key": {
+		"C": {
+			"tag": "forge:ingots/aluminum"
+		}
+	},
+	"result": {
+		"item": "read:aluminum_block",
+		"count": 1
+	}
+}

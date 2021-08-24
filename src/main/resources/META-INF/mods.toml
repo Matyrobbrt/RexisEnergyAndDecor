@@ -1,0 +1,32 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="MIT"
+[[mods]]
+modId="read"
+version="${file.jarVersion}"
+displayName="RexisEnergyAndDecor"
+logoFile="examplemod.png" #optional
+credits="Thanks for Cy4 for his nice Tutorial, Swacky and Maty for mental help and True_Penut for Arts!"
+description='''
+Mod by IbimsRexi
+Arts by True_Penut
+'''
+
+[[dependencies.read]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.read]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"
+#[[dependencies.read]]
+    #modId="patchouli"
+    #mandatory=false
+    #versionRange="[1.16.4-53.1,)"
+    #ordering="NONE"
+    #side="BOTH"

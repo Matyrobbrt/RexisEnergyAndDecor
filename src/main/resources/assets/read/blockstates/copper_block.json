@@ -1,0 +1,5 @@
+{
+	"variants": {
+		"": { "model": "read:block/copper_block" }
+	}
+}
