@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "read:items/rexenergy/re_1m_coin"
+		"layer0": "read:items/ore_processing_tool"
 	}
 }

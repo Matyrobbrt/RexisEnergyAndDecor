@@ -10,10 +10,12 @@ import com.rexiwastaken.read.core.init.BlockItemInit;
 import com.rexiwastaken.read.core.init.FeatureInit;
 import com.rexiwastaken.read.core.init.ItemInit;
 import com.rexiwastaken.read.core.init.PotionInit;
+import com.rexiwastaken.read.core.init.RecipeInit;
 import com.rexiwastaken.read.core.itemgroup.READItemGroup;
 
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.crafting.IRecipeSerializer;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
@@ -33,6 +35,8 @@ public class RexisEnergyAndDecor {
 
 	public RexisEnergyAndDecor() {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+		
+		bus.addGenericListener(IRecipeSerializer.class, RecipeInit::registerRecipes);
 
 		BlockItemInit.BLOCKS.register(bus);
 		BlockInit.BLOCKS.register(bus);
@@ -59,13 +63,6 @@ public class RexisEnergyAndDecor {
 						.setRegistryName(block.getRegistryName()));
 			}
 			
-			/* event.getRegistry()
-					.register(new UraniumBlockItem(BlockItemInit.URANIUM_BLOCK.get(),
-							new Item.Properties().tab(READItemGroup.READ))
-									.setRegistryName("read:uranium_block"));
-			event.getRegistry().register(
-					new UraniumOreItem(BlockItemInit.URANIUM_ORE.get(), new Item.Properties().tab(READItemGroup.READ))
-							.setRegistryName("read:uranium_ore"));*/
 		});
 	}
 }

@@ -8,6 +8,7 @@
 	"item.read.aluminum_nugget": "Aluminum Nugget",
 	"item.read.lead_nugget": "Lead Nugget",
 	"item.read.uranium_nugget": "Uranium Shard",
+	"item.read.ore_processing_tool": "Ore Processing Tool",
 	
 	// These are the Ore names
 	"block.read.copper_ore": "Copper Ore",
@@ -21,7 +22,7 @@
 	"block.read.lead_block": "Block of Lead",
 	"block.read.uranium_block": "Block of Uranium",
 	
-	//This are the Armour names
+	//Armour names
 	"item.read.hazmat_suit_helmet": "Gas Mask",
 	"item.read.hazmat_suit_chest": "Hazmat Chestplate",
 	"item.read.hazmat_suit_leggings": "Hazmat Leggings",
