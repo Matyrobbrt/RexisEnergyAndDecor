@@ -1,0 +1,10 @@
+{
+    "type": "read:ore_processing_tool_recipe",
+    "input": {
+        "item": "minecraft:redstone_ore"
+    },
+    "output": {
+        "item": "minecraft:redstone",
+        "count": 6
+    }
+}

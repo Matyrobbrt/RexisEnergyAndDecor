@@ -17,7 +17,7 @@ public class FeatureInit {
 		addOre(event, new TagMatchRuleTest(BlockTags.BASE_STONE_OVERWORLD), 
 				BlockInit.COPPER_ORE.get().defaultBlockState(), 14, 16, 60, 25);
 		addOre(event, new TagMatchRuleTest(BlockTags.BASE_STONE_OVERWORLD), 
-				BlockInit.BAUXITE.get().defaultBlockState(), 10, 0, 48, 15);
+				BlockInit.ALUMINUM_ORE.get().defaultBlockState(), 10, 0, 48, 15);
 		addOre(event, new TagMatchRuleTest(BlockTags.BASE_STONE_OVERWORLD), 
 				BlockInit.LEAD_ORE.get().defaultBlockState(), 12, 0, 56, 20);
 		addOre(event, new TagMatchRuleTest(BlockTags.BASE_STONE_OVERWORLD), 

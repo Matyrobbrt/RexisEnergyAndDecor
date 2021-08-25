@@ -1,0 +1,10 @@
+{
+    "type": "read:ore_processing_tool_recipe",
+    "input": {
+        "item": "read:lead_ore"
+    },
+    "output": {
+        "item": "read:lead_ingot",
+        "count": 2
+    }
+}
