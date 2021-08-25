@@ -20,7 +20,7 @@ public class BlockInit {
 	public static final RegistryObject<Block> COPPER_ORE = BLOCKS.register("copper_ore",
 			() -> new Block(AbstractBlock.Properties.of(Material.HEAVY_METAL, MaterialColor.COLOR_GRAY).strength(3f, 3f)
 					.harvestTool(ToolType.PICKAXE).harvestLevel(1).sound(SoundType.METAL).requiresCorrectToolForDrops()));
-	public static final RegistryObject<Block> BAUXITE = BLOCKS.register("aluminum_ore",
+	public static final RegistryObject<Block> ALUMINUM_ORE = BLOCKS.register("aluminum_ore",
 			() -> new Block(AbstractBlock.Properties.of(Material.HEAVY_METAL, MaterialColor.COLOR_GRAY).strength(3f, 4f)
 					.harvestTool(ToolType.PICKAXE).harvestLevel(2).sound(SoundType.METAL).requiresCorrectToolForDrops()));
 	public static final RegistryObject<Block> LEAD_ORE = BLOCKS.register("lead_ore",

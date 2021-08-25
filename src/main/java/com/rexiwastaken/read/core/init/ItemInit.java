@@ -54,17 +54,23 @@ public class ItemInit {
 			() -> new HazmatSuitShoes(HazmatSuitMaterial.HAZMAT_SUIT, EquipmentSlotType.FEET,
 					new Item.Properties().tab(READItemGroup.READ)));
 
-	//"Energy"
+	// "Energy"
 	public static final RegistryObject<RE100Coin> RE_100_COIN = ITEMS.register("re_100_coin", RE100Coin::new);
 	public static final RegistryObject<RE1kCoin> RE_1K_COIN = ITEMS.register("re_1k_coin", RE1kCoin::new);
 	public static final RegistryObject<RE10kCoin> RE_10K_COIN = ITEMS.register("re_10k_coin", RE10kCoin::new);
-	public static final RegistryObject<RE100kCoin> RE_100K_COIN = ITEMS.register("re100k_coin", RE100kCoin::new);
+	public static final RegistryObject<RE100kCoin> RE_100K_COIN = ITEMS.register("re_100k_coin", RE100kCoin::new);
 	public static final RegistryObject<RE1mCoin> RE_1M_COIN = ITEMS.register("re_1m_coin", RE1mCoin::new);
-	
+
 	// BlockItems
-	/*public static final RegistryObject<Item> URANIUM_ORE_ITEM = ITEMS.register(BlockInit.URANIUM_ORE.get().getRegistryName().toString(),
-			() -> new BlockItem(BlockInit.URANIUM_ORE.get(), new Item.Properties().tab(READItemGroup.READ)));
-	public static final RegistryObject<Item> URANIUM_BLOCK_ITEM = ITEMS.register(BlockInit.URANIUM_BLOCK.get().getRegistryName().toString(),
-			() -> new BlockItem(BlockInit.URANIUM_BLOCK.get(), new Item.Properties().tab(READItemGroup.READ)));*/
-			
+	/*
+	 * public static final RegistryObject<Item> URANIUM_ORE_ITEM =
+	 * ITEMS.register(BlockInit.URANIUM_ORE.get().getRegistryName().toString(), ()
+	 * -> new BlockItem(BlockInit.URANIUM_ORE.get(), new
+	 * Item.Properties().tab(READItemGroup.READ))); public static final
+	 * RegistryObject<Item> URANIUM_BLOCK_ITEM =
+	 * ITEMS.register(BlockInit.URANIUM_BLOCK.get().getRegistryName().toString(), ()
+	 * -> new BlockItem(BlockInit.URANIUM_BLOCK.get(), new
+	 * Item.Properties().tab(READItemGroup.READ)));
+	 */
+
 }
