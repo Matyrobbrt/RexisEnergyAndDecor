@@ -1,0 +1,10 @@
+{
+    "type": "read:ore_processing_tool_recipe",
+    "input": {
+        "item": "read:aluminum_ore"
+    },
+    "output": {
+        "item": "read:aluminum_ingot",
+        "count": 2
+    }
+}

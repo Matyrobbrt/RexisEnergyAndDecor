@@ -1,0 +1,10 @@
+{
+    "type": "read:ore_processing_tool_recipe",
+    "input": {
+        "item": "minecraft:coal_ore"
+    },
+    "output": {
+        "item": "minecraft:coal",
+        "count": 6
+    }
+}
