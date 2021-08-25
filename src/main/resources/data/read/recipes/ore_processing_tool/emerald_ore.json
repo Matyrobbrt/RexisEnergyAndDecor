@@ -1,0 +1,10 @@
+{
+	"type": "read:ore_processing_tool_recipe",
+	"input": {
+		"item": "minecraft:emerald_ore"
+	},
+	"output": {
+		"item": "minecraft:emerald",
+		"count": 2
+	}
+}
