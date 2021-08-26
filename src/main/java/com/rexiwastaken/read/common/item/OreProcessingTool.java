@@ -12,6 +12,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
+import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.world.World;
 
 public class OreProcessingTool extends Item {
@@ -31,6 +32,9 @@ public class OreProcessingTool extends Item {
 					player.drop(new ItemStack(recipe.getResultItem().getItem(), recipe.getResultItem().getCount()), false);
 					offHandItem.shrink(1);
 					ModHelper.getItemStack(player, ItemInit.RE_100_COIN.get().getRegistryName()).shrink(1);
+				} else {
+					if (!world.isClientSide)
+					player.sendMessage(new StringTextComponent("\u00A74" + "You don't have an 100RE coin on you!"), player.getUUID());
 				}
 			}
 		}
