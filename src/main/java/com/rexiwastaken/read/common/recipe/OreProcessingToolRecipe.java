@@ -15,6 +15,7 @@ import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.crafting.ShapedRecipe;
 import net.minecraft.network.PacketBuffer;
 import net.minecraft.util.JSONUtils;
+import net.minecraft.util.NonNullList;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.minecraftforge.registries.ForgeRegistryEntry;
@@ -41,6 +42,13 @@ public class OreProcessingToolRecipe implements IRecipe<IInventory> {
 	@Override
 	public ItemStack assemble(IInventory inv) {
 		return this.output.copy();
+	}
+	
+	@Override
+	public NonNullList<Ingredient> getIngredients() {
+		NonNullList<Ingredient> i = NonNullList.create();
+		i.add(input);
+		return i;
 	}
 	
 	@Override

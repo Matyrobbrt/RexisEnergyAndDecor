@@ -4,7 +4,7 @@ import com.rexiwastaken.read.RexisEnergyAndDecor;
 
 import net.minecraft.item.crafting.IRecipeType;
 
-public class OreProcessingToolType implements IRecipeType<OreProcessingToolRecipe> {
+public class OreProcessingToolRecipeType implements IRecipeType<OreProcessingToolRecipe> {
 
 	@Override
 	public String toString() {
