@@ -1,0 +1,9 @@
+{
+    "type": "read:fuel_generator_accepted_items",
+    "input": {
+        "tag": "read:fuel_generator_accepted_items/1k_re"
+    },
+    "output": {
+    	"item": "read:re_1k_coin"
+    }
+}

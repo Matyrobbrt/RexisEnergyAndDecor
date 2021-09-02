@@ -35,6 +35,12 @@
 	"item.read.re_100k_coin": "100KRE",
 	"item.read.re_1m_coin": "1MRE",
 	
+	//Block TE names
+	"block.read.fuel_generator": "Fuel Generator",
+	
+	//Containers
+	"container.read.fuel_generator": "Fuel Generator",
+	
 	//Special Names
 	"itemGroup.read": "RexisEnergyAndDecor",
 	"effect.read.radiation": "Radiation",

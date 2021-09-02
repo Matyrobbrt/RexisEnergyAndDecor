@@ -5,12 +5,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.rexiwastaken.read.common.item.UraniumBlockItem;
 import com.rexiwastaken.read.common.item.UraniumOreItem;
-import com.rexiwastaken.read.core.init.BlockInit;
-import com.rexiwastaken.read.core.init.BlockItemInit;
-import com.rexiwastaken.read.core.init.FeatureInit;
-import com.rexiwastaken.read.core.init.ItemInit;
-import com.rexiwastaken.read.core.init.PotionInit;
-import com.rexiwastaken.read.core.init.RecipeInit;
+import com.rexiwastaken.read.core.init.*;
 import com.rexiwastaken.read.core.itemgroup.READItemGroup;
 
 import net.minecraft.item.BlockItem;
@@ -38,10 +33,11 @@ public class RexisEnergyAndDecor {
 		
 		bus.addGenericListener(IRecipeSerializer.class, RecipeInit::registerRecipes);
 
-		BlockItemInit.BLOCKS.register(bus);
 		BlockInit.BLOCKS.register(bus);
 		ItemInit.ITEMS.register(bus);
 		PotionInit.EFFECTS.register(bus);
+		TileEntityTypesInit.TILE_ENTITY_TYPE.register(bus);
+		ContainerTypesInit.CONTAINER_TYPES.register(bus);
 
 		MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, FeatureInit::addOres);
 		MinecraftForge.EVENT_BUS.register(this);

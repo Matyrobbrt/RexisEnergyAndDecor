@@ -1,6 +1,7 @@
 package com.rexiwastaken.read.core.init;
 
 import com.rexiwastaken.read.RexisEnergyAndDecor;
+import com.rexiwastaken.read.common.block.FuelGeneratorBlock;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -43,5 +44,8 @@ public class BlockInit {
 	public static final RegistryObject<Block> URANIUM_BLOCK = BLOCKS.register("uranium_block",
 			() -> new Block(AbstractBlock.Properties.of(Material.HEAVY_METAL, MaterialColor.COLOR_GRAY).strength(6f, 4f)
 					.harvestTool(ToolType.PICKAXE).harvestLevel(3).sound(SoundType.METAL).requiresCorrectToolForDrops()));
+	
+	//Tile Entity Blocks
+	public static final RegistryObject<Block> FUEL_GENERATOR = BLOCKS.register("fuel_generator", () -> new FuelGeneratorBlock());
 	
 }
