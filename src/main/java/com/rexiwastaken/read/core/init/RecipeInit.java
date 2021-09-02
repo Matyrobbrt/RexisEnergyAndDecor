@@ -4,6 +4,7 @@ import com.rexiwastaken.read.common.recipe.FuelGeneratorRecipe;
 import com.rexiwastaken.read.common.recipe.OreProcessingToolRecipe;
 import com.rexiwastaken.read.common.recipe.type.FuelGeneratorRecipeType;
 import com.rexiwastaken.read.common.recipe.type.OreProcessingToolRecipeType;
+import com.rexiwastaken.read.common.recipe.OreProcessingToolRecipeType;
 
 import net.minecraft.item.crafting.IRecipeSerializer;
 import net.minecraft.item.crafting.IRecipeType;

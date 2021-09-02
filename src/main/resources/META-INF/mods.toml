@@ -24,9 +24,15 @@ Arts by True_Penut
     versionRange="[1.16.5,1.17)"
     ordering="NONE"
     side="BOTH"
-#[[dependencies.read]]
-    #modId="patchouli"
-    #mandatory=false
-    #versionRange="[1.16.4-53.1,)"
-    #ordering="NONE"
-    #side="BOTH"
+[[dependencies.read]]
+    modId="patchouli"
+    mandatory=false
+    versionRange="[1.16.4-53.1,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.read]]
+    modId="jei"
+    mandatory=false
+    versionRange="[7.7.1.118,)"
+    ordering="NONE"
+    side="CLIENT"

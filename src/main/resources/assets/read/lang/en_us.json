@@ -43,5 +43,8 @@
 	
 	//Special Names
 	"itemGroup.read": "RexisEnergyAndDecor",
-	"effect.read.radiation": "Radiation"
+	"effect.read.radiation": "Radiation",
+	
+	//Category
+	"category.read.ore_processing_tool_recipe": "Ore Processing Tool Recipe Category"
 }
