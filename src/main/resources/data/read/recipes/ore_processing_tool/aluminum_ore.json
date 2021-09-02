@@ -1,7 +1,7 @@
 {
     "type": "read:ore_processing_tool_recipe",
     "input": {
-        "item": "read:aluminum_ore"
+        "tag": "forge:ores/aluminum"
     },
     "output": {
         "item": "read:aluminum_ingot",

@@ -1,7 +1,7 @@
 {
 	"type": "read:ore_processing_tool_recipe",
 	"input": {
-		"item": "minecraft:emerald_ore"
+		"tag": "forge:ores/emerald"
 	},
 	"output": {
 		"item": "minecraft:emerald",

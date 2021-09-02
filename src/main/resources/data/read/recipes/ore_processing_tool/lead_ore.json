@@ -1,7 +1,7 @@
 {
     "type": "read:ore_processing_tool_recipe",
     "input": {
-        "item": "read:lead_ore"
+        "tag": "forge:ores/lead"
     },
     "output": {
         "item": "read:lead_ingot",

@@ -1,7 +1,7 @@
 {
 	"type": "read:ore_processing_tool_recipe",
 	"input": {
-		"item": "minecraft:gold_ore"
+		"tag": "forge:ores/gold"
 	},
 	"output": {
 		"item": "minecraft:gold_ingot",

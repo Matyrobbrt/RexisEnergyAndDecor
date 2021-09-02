@@ -1,7 +1,7 @@
 {
     "type": "read:ore_processing_tool_recipe",
     "input": {
-        "item": "read:copper_ore"
+        "tag": "forge:ores/copper"
     },
     "output": {
         "item": "read:copper_ingot",
