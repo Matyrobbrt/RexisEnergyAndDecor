@@ -34,7 +34,22 @@
 	"item.read.re_100k_coin": "100KRE",
 	"item.read.re_1m_coin": "1MRE",
 	
+	//Block TE Namen
+	"block.read.fuel_generator": "Treibstoff Generator",
+	
+	//Container
+	"container.read.fuel_generator": "Treibstoff Generator",
+	
 	//Spezielle Namen
 	"itemGroup.read": "RexisEnergyAndDecor",
-	"effect.read.radiation": "Radioaktivitaet"
+	"effect.read.radiation": "Radioaktivitaet",
+	
+	//Kategorie
+	"category.read.ore_processing_tool_recipe": "Ore Processing Tool Recipe Category",
+	
+	//Todes Nachrichten
+	"death.attack.readRadiationDeath": "%1$s radiierte zu Tode!",
+	"death.attack.readRadiationDeath.player": "%1$s verrotete während er %2$s bekämpfte",
+	"death.attack.readFallRadiationDeath": "%1$s's Beine waren etwas zu weich",
+	"death.attack.readFallRadiationDeath.player": "%1$s's grüne Haut konnte ihn nicht vor %2$s beschützen"
 }
