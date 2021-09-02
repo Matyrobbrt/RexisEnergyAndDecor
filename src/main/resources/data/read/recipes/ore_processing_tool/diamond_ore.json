@@ -1,7 +1,7 @@
 {
 	"type": "read:ore_processing_tool_recipe",
 	"input": {
-		"item": "minecraft:diamond_ore"
+		"tag": "forge:ores/diamond"
 	},
 	"output": {
 		"item": "minecraft:diamond",

@@ -1,7 +1,7 @@
 {
     "type": "read:ore_processing_tool_recipe",
     "input": {
-        "item": "minecraft:redstone_ore"
+        "tag": "forge:ores/redstone"
     },
     "output": {
         "item": "minecraft:redstone",
