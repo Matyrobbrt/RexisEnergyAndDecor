@@ -46,5 +46,11 @@
 	"effect.read.radiation": "Radiation",
 	
 	//Category
-	"category.read.ore_processing_tool_recipe": "Ore Processing Tool Recipe Category"
+	"category.read.ore_processing_tool_recipe": "Ore Processing Tool Recipe Category",
+	
+	//Death Messages
+	"death.attack.readRadiationDeath": "%1$s irradiated to death!",
+	"death.attack.readRadiationDeath.player": "%1$s rotted out whilst fighting %2$s",
+	"death.attack.readFallRadiationDeath": "%1$s's legs were a bit too woozy",
+	"death.attack.readFallRadiationDeath.player": "%1$s's green skin couldnt protect them against %2$s"
 }
