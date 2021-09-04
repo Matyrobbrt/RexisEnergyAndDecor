@@ -8,6 +8,7 @@
 	"item.read.aluminum_nugget": "Aluminiumklumpen",
 	"item.read.lead_nugget": "Bleiklumpen",
 	"item.read.uranium_nugget": "Uransplitter",
+	"item.read.ore_processing_tool": "Erzprozessionswerkzeug",
 	
 	//Namen der Erze
 	"block.read.copper_ore": "Kupfererz",
@@ -42,10 +43,10 @@
 	
 	//Spezielle Namen
 	"itemGroup.read": "RexisEnergyAndDecor",
-	"effect.read.radiation": "Radioaktivitaet",
+	"effect.read.radiation": "Strahlung",
 	
 	//Kategorie
-	"category.read.ore_processing_tool_recipe": "Ore Processing Tool Recipe Category",
+	"category.read.ore_processing_tool_recipe": "Erzprozessionswerkzeug Rezepte Kategorie",
 	
 	//Todes Nachrichten
 	"death.attack.readRadiationDeath": "%1$s radiierte zu Tode!",
