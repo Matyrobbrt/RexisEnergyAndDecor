@@ -3,6 +3,8 @@ package com.rexiwastaken.read.common.item;
 import com.rexiwastaken.read.core.helper.NBTHelper;
 import com.rexiwastaken.read.core.init.ItemInit;
 
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -35,8 +37,12 @@ public class HazmatSuitChestplate extends ArmorItem {
 			else
 				NBTHelper.setBoolean(stack, "IsAllHazmatSuit", false);
 		}
-		if (stack.getDamageValue() != 0)
-			stack.setDamageValue(0);
+	}
+	
+	@Override
+	public boolean canApplyAtEnchantingTable(ItemStack stack, Enchantment enchantment) {
+		if (enchantment == Enchantments.MENDING) return false;
+		return false;
 	}
 
 }

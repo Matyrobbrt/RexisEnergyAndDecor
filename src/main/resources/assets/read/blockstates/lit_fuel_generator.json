@@ -1,8 +1,0 @@
-{
-  "parent": "block/orientable",
-  "textures": {
-    "top": "read:block/machine_side",
-    "front": "read:block/lit_furnace_front",
-    "side": "read:block/machine_side"
-  }
-}

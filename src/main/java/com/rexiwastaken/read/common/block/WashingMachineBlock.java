@@ -1,6 +1,6 @@
 package com.rexiwastaken.read.common.block;
 
-import com.rexiwastaken.read.common.te.machines.FuelGeneratorTileEntity;
+import com.rexiwastaken.read.common.te.machines.WashingMachineTileEntity;
 import com.rexiwastaken.read.core.init.TileEntityTypesInit;
 
 import net.minecraft.block.AbstractBlock;
@@ -10,7 +10,6 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.inventory.container.Container;
@@ -32,18 +31,17 @@ import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.network.NetworkHooks;
 
-@SuppressWarnings("unused")
-public class FuelGeneratorBlock extends Block {
-
+public class WashingMachineBlock extends Block {
+	
 	public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 	public static final BooleanProperty LIT = BooleanProperty.create("lit");
-	
-	public FuelGeneratorBlock() {
+
+	public WashingMachineBlock() {
 		super(AbstractBlock.Properties.of(Material.METAL, MaterialColor.COLOR_GRAY).strength(10f)
 				.sound(SoundType.METAL).harvestLevel(4));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(LIT, false));
 	}
-	
+
 	@Override
 	public boolean hasTileEntity(BlockState state) {
 		return true;
@@ -51,7 +49,7 @@ public class FuelGeneratorBlock extends Block {
 	
 	@Override
 	public TileEntity createTileEntity(BlockState state, IBlockReader world) {
-		return TileEntityTypesInit.FUEL_GENERATOR_TILE_ENTITY_TYPE.get().create();
+		return TileEntityTypesInit.WASHING_MACHINE_TILE_ENTITY_TYPE.get().create();
 	}
 	
 	@Override
@@ -59,8 +57,8 @@ public class FuelGeneratorBlock extends Block {
 			Hand handIn, BlockRayTraceResult hit) {
 		if (!worldIn.isClientSide()) {
 			TileEntity te = worldIn.getBlockEntity(pos);
-			if (te instanceof FuelGeneratorTileEntity) {
-				NetworkHooks.openGui((ServerPlayerEntity) player, (FuelGeneratorTileEntity) te, pos);
+			if (te instanceof WashingMachineTileEntity) {
+				NetworkHooks.openGui((ServerPlayerEntity) player, (WashingMachineTileEntity) te, pos);
 			}
 		}
 		return ActionResultType.SUCCESS;
@@ -108,27 +106,29 @@ public class FuelGeneratorBlock extends Block {
 		super.setPlacedBy(worldIn, pos, state, placer, stack);
 		if (stack.hasCustomHoverName()) {
 			TileEntity tile = worldIn.getBlockEntity(pos);
-			if (tile instanceof FuelGeneratorTileEntity) {
-				((FuelGeneratorTileEntity) tile).setCustomName(stack.getDisplayName());
+			if (tile instanceof WashingMachineTileEntity) {
+				((WashingMachineTileEntity) tile).setCustomName(stack.getDisplayName());
 			}
 		}
 	}
 	
+	@SuppressWarnings("unused")
 	@Override
 	public void onRemove(BlockState state, World worldIn, BlockPos pos, BlockState newState, boolean isMoving) {
 		TileEntity tile = worldIn.getBlockEntity(pos);
-		/*
-		if (tile instanceof FuelGeneratorTileEntity && state.getBlock() != newState.getBlock()) {
-			FuelGeneratorTileEntity generator = (FuelGeneratorTileEntity) tile;
+		/**
+		if (tile instanceof WashingMachineTileEntity && state.getBlock() != newState.getBlock()) {
+			WashingMachineTileEntity generator = (WashingMachineTileEntity) tile;
 			generator.getAllItems().forEach(item -> {
 				ItemEntity itemEntity = new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), item);
 				worldIn.addFreshEntity(itemEntity);
 			});
 		}
-		*/
+		**/
+
 		if (state.hasTileEntity() && state.getBlock() != newState.getBlock()) {
 			worldIn.removeBlockEntity(pos);
 		}
 	}
-
+	
 }

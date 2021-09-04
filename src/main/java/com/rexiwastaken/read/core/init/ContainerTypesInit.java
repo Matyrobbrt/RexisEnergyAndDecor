@@ -16,5 +16,7 @@ public class ContainerTypesInit {
 	
 	public static final RegistryObject<ContainerType<FuelGeneratorContainer>> FUEL_GENERATOR_CONTAINER_TYPE = CONTAINER_TYPES
 			.register("fuel_generator", () -> IForgeContainerType.create(FuelGeneratorContainer::new));
+	public static final RegistryObject<ContainerType<WashingMachineContainer>> WASHING_MACHINE_CONTAINER_TYPE = CONTAINER_TYPES
+			.register("washing_machine", () -> IForgeContainerType.create(WashingMachineContainer::new));
 
 }

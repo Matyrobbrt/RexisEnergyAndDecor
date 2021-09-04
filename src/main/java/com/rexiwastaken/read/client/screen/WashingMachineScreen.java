@@ -3,7 +3,7 @@ package com.rexiwastaken.read.client.screen;
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.rexiwastaken.read.RexisEnergyAndDecor;
-import com.rexiwastaken.read.common.container.FuelGeneratorContainer;
+import com.rexiwastaken.read.common.container.WashingMachineContainer;
 
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.entity.player.PlayerInventory;
@@ -13,12 +13,12 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 @OnlyIn(Dist.CLIENT)
-public class FuelGeneratorScreen extends ContainerScreen<FuelGeneratorContainer> {
-	
-	private static final ResourceLocation FUEL_GENERATOR_GUI = new ResourceLocation(RexisEnergyAndDecor.MOD_ID,
-			"textures/gui/fuel_generator.png");
+public class WashingMachineScreen extends ContainerScreen<WashingMachineContainer> {
 
-	public FuelGeneratorScreen(FuelGeneratorContainer screenContainer, PlayerInventory inv, ITextComponent titleIn) {
+	private static final ResourceLocation WASHING_MACHINE_GUI = new ResourceLocation(RexisEnergyAndDecor.MOD_ID,
+			"textures/gui/washing_machine.png");
+
+	public WashingMachineScreen(WashingMachineContainer screenContainer, PlayerInventory inv, ITextComponent titleIn) {
 		super(screenContainer, inv, titleIn);
 
 		this.leftPos = 0;
@@ -36,8 +36,8 @@ public class FuelGeneratorScreen extends ContainerScreen<FuelGeneratorContainer>
 	
 	@Override
 	protected void renderLabels(MatrixStack matrixStack, int x, int y) {
-		this.font.draw(matrixStack, this.inventory.getDisplayName(), 8.0f, 40.0f, 0x42AD98);
-		this.font.draw(matrixStack, this.menu.te.getDisplayName(), 29.0f, 6.0f, 0x42AD98);
+		this.font.draw(matrixStack, this.inventory.getDisplayName(), 7.0f, 90.0f, 0x42AD98);
+		this.font.draw(matrixStack, this.menu.te.getDisplayName(), 36.0f, 7.0f, 0x42AD98);
 	}
 
 	@SuppressWarnings("deprecation")
@@ -45,14 +45,18 @@ public class FuelGeneratorScreen extends ContainerScreen<FuelGeneratorContainer>
 	protected void renderBg(MatrixStack matrixStack, float partialTicks, int mouseX,
 			int mouseY) {
 		RenderSystem.color4f(1f, 1f, 1f, 1f);
-		this.minecraft.textureManager.bind(FUEL_GENERATOR_GUI);
+		this.minecraft.textureManager.bind(WASHING_MACHINE_GUI);
 		int x = (this.width - this.imageWidth) / 2;
 		int y = (this.height - this.imageHeight) / 2;
 		this.blit(matrixStack, x, y, 0, 0, this.imageWidth, this.imageHeight);
-		
-		this.blit(matrixStack, this.leftPos + 71, this.topPos + 22, 176, 0, this.menu.getProgressionScaled(), 10);
-		if (this.menu.isGreen()) this.blit(matrixStack, this.leftPos + 6, this.topPos + 6, 177, 11, 9, 7);
-		else this.blit(matrixStack, this.leftPos + 14, this.topPos + 6, 191, 11, 9, 7);
+
+		this.blit(matrixStack, this.leftPos + 60, this.topPos + 24, 177, 24, this.menu.getProgressionScaled(), 31);
+		this.blit(matrixStack, this.leftPos + 57, this.topPos + 79, 142, 249, this.menu.getREAmount(), 7);
+		for (int i = 0; i <= 41; ++i) {
+			if (this.menu.getWaterAmount() >= i) {
+				this.blit(matrixStack, this.leftPos + 7, this.topPos + 21 + 41 - i, 177, 55 + 41 - i, 18, 1);
+			}
+		}
 	}
 
 }

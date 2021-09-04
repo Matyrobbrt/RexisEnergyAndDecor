@@ -2,6 +2,7 @@ package com.rexiwastaken.read.core.init;
 
 import com.rexiwastaken.read.RexisEnergyAndDecor;
 import com.rexiwastaken.read.common.block.FuelGeneratorBlock;
+import com.rexiwastaken.read.common.block.WashingMachineBlock;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -47,5 +48,6 @@ public class BlockInit {
 	
 	//Tile Entity Blocks
 	public static final RegistryObject<Block> FUEL_GENERATOR = BLOCKS.register("fuel_generator", () -> new FuelGeneratorBlock());
+	public static final RegistryObject<Block> WASHING_MACHINE = BLOCKS.register("washing_machine", () -> new WashingMachineBlock());
 	
 }

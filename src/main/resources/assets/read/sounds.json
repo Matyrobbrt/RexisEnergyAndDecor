@@ -1,0 +1,12 @@
+{
+	"block.washing_machine_sound": {
+		"category": "block",
+		"subtitle": "block.washing_machine_sound.sub",
+		"sounds": [
+			{
+				"name": "read:block/washing_machine_sound",
+				"stream": true
+			}
+		]
+	}
+}

@@ -33,12 +33,13 @@ public class RexisEnergyAndDecor {
 		
 		bus.addGenericListener(IRecipeSerializer.class, RecipeInit::registerRecipes);
 
+		SoundInit.SOUNDS.register(bus);
 		BlockInit.BLOCKS.register(bus);
 		ItemInit.ITEMS.register(bus);
 		PotionInit.EFFECTS.register(bus);
 		TileEntityTypesInit.TILE_ENTITY_TYPE.register(bus);
 		ContainerTypesInit.CONTAINER_TYPES.register(bus);
-
+		
 		MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, FeatureInit::addOres);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
