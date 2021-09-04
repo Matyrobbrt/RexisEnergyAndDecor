@@ -3,7 +3,7 @@ package com.rexiwastaken.read.common.container;
 import java.util.Objects;
 
 import com.rexiwastaken.read.common.slot.OutputSlot;
-import com.rexiwastaken.read.common.te.FuelGeneratorTileEntity;
+import com.rexiwastaken.read.common.te.machines.FuelGeneratorTileEntity;
 import com.rexiwastaken.read.core.init.BlockInit;
 import com.rexiwastaken.read.core.init.ContainerTypesInit;
 import com.rexiwastaken.read.core.util.FunctionalIntReferenceHolder;
@@ -99,7 +99,7 @@ public class FuelGeneratorContainer extends Container {
 	}
 
 	@OnlyIn(Dist.CLIENT)
-	public int getSmeltProgressionScaled() {
+	public int getProgressionScaled() {
 		return this.currentWaitTime.get() != 0 && this.te.maxWaitTime != 0
 				? this.currentWaitTime.get() * 35 / this.te.maxWaitTime
 				: 0;

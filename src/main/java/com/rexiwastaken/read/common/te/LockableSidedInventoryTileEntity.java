@@ -164,32 +164,33 @@ public abstract class LockableSidedInventoryTileEntity extends LockableTileEntit
 			return false;
 		}
 	}
-	
-    @SuppressWarnings("unused")
-	private boolean hasRoomForOutputItem(ItemStack stack) {
-        for (int i : getOutputSlots()) {
-            ItemStack output = getItem(i);
-            if (InventoryUtils.canItemsStack(stack, output)) {
-                return true;
-            }
-        }
-        return false;
-    }
 
-    protected void storeResultItem(ItemStack stack) {
-        // Merge the item into any output slot it can fit in
-        for (int i : getOutputSlots()) {
-            ItemStack output = getItem(i);
-            if (InventoryUtils.canItemsStack(stack, output)) {
-                if (output.isEmpty()) {
-                    setItem(i, stack);
-                } else {
-                    output.setCount(output.getCount() + stack.getCount());
-                }
-                return;
-            }
-        }
-    }
-    
-    protected abstract int[] getOutputSlots();
+	@SuppressWarnings("unused")
+	private boolean hasRoomForOutputItem(ItemStack stack) {
+		for (int i : getOutputSlots()) {
+			ItemStack output = getItem(i);
+			if (InventoryUtils.canItemsStack(stack, output)) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	protected void storeResultItem(ItemStack stack) {
+		// Merge the item into any output slot it can fit in
+		for (int i : getOutputSlots()) {
+			ItemStack output = getItem(i);
+			if (InventoryUtils.canItemsStack(stack, output)) {
+				if (output.isEmpty()) {
+					setItem(i, stack);
+				} else {
+					output.setCount(output.getCount() + stack.getCount());
+				}
+				return;
+			}
+		}
+	}
+
+	protected abstract int[] getOutputSlots();
+
 }

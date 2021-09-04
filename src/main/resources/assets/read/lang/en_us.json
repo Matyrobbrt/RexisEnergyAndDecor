@@ -9,6 +9,7 @@
 	"item.read.lead_nugget": "Lead Nugget",
 	"item.read.uranium_nugget": "Uranium Shard",
 	"item.read.ore_processing_tool": "Ore Processing Tool",
+	"item.read.soap": "Soap",
 	
 	// These are the Ore names
 	"block.read.copper_ore": "Copper Ore",
@@ -37,9 +38,11 @@
 	
 	//Block TE names
 	"block.read.fuel_generator": "Fuel Generator",
+	"block.read.washing_machine": "Washing Machine",
 	
 	//Containers
 	"container.read.fuel_generator": "Fuel Generator",
+	"container.read.washing_machine": "Washing Machine",
 	
 	//Special Names
 	"itemGroup.read": "RexisEnergyAndDecor",

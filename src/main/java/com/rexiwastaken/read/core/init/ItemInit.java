@@ -39,6 +39,8 @@ public class ItemInit {
 			() -> new Item(new Item.Properties().tab(READItemGroup.READ)));
 	public static final RegistryObject<Item> LEAD_NUGGET = ITEMS.register("lead_nugget",
 			() -> new Item(new Item.Properties().tab(READItemGroup.READ)));
+	public static final RegistryObject<Item> SOAP = ITEMS.register("soap",
+			() -> new Item(new Item.Properties().tab(READItemGroup.READ)));
 	public static final RegistryObject<Item> URANIUM_NUGGET = ITEMS.register("uranium_nugget", UraniumShard::new);
 	public static final RegistryObject<OreProcessingTool> ORE_PROCESSING_TOOL = ITEMS.register("ore_processing_tool",
 			OreProcessingTool::new);
@@ -46,16 +48,16 @@ public class ItemInit {
 	// Tools and Armour
 	public static final RegistryObject<Item> HAZMAT_SUIT_HELMET = ITEMS.register("hazmat_suit_helmet",
 			() -> new HazmatSuitHelmet(HazmatSuitMaterial.HAZMAT_SUIT, EquipmentSlotType.HEAD,
-					new Item.Properties().tab(READItemGroup.READ)));
+					new Item.Properties().tab(READItemGroup.READ).defaultDurability(256)));
 	public static final RegistryObject<Item> HAZMAT_SUIT_CHEST = ITEMS.register("hazmat_suit_chest",
 			() -> new HazmatSuitChestplate(HazmatSuitMaterial.HAZMAT_SUIT, EquipmentSlotType.CHEST,
-					new Item.Properties().tab(READItemGroup.READ)));
+					new Item.Properties().tab(READItemGroup.READ).defaultDurability(256)));
 	public static final RegistryObject<Item> HAZMAT_SUIT_LEGGINGS = ITEMS.register("hazmat_suit_leggings",
 			() -> new HazmatSuitLeggings(HazmatSuitMaterial.HAZMAT_SUIT, EquipmentSlotType.LEGS,
-					new Item.Properties().tab(READItemGroup.READ)));
+					new Item.Properties().tab(READItemGroup.READ).defaultDurability(256)));
 	public static final RegistryObject<Item> HAZMAT_SUIT_SHOES = ITEMS.register("hazmat_suit_shoes",
 			() -> new HazmatSuitShoes(HazmatSuitMaterial.HAZMAT_SUIT, EquipmentSlotType.FEET,
-					new Item.Properties().tab(READItemGroup.READ)));
+					new Item.Properties().tab(READItemGroup.READ).defaultDurability(256)));
 
 	// "Energy"
 	public static final RegistryObject<RE100Coin> RE_100_COIN = ITEMS.register("re_100_coin", RE100Coin::new);
@@ -63,17 +65,5 @@ public class ItemInit {
 	public static final RegistryObject<RE10kCoin> RE_10K_COIN = ITEMS.register("re_10k_coin", RE10kCoin::new);
 	public static final RegistryObject<RE100kCoin> RE_100K_COIN = ITEMS.register("re_100k_coin", RE100kCoin::new);
 	public static final RegistryObject<RE1mCoin> RE_1M_COIN = ITEMS.register("re_1m_coin", RE1mCoin::new);
-
-	// BlockItems
-	/*
-	 * public static final RegistryObject<Item> URANIUM_ORE_ITEM =
-	 * ITEMS.register(BlockInit.URANIUM_ORE.get().getRegistryName().toString(), ()
-	 * -> new BlockItem(BlockInit.URANIUM_ORE.get(), new
-	 * Item.Properties().tab(READItemGroup.READ))); public static final
-	 * RegistryObject<Item> URANIUM_BLOCK_ITEM =
-	 * ITEMS.register(BlockInit.URANIUM_BLOCK.get().getRegistryName().toString(), ()
-	 * -> new BlockItem(BlockInit.URANIUM_BLOCK.get(), new
-	 * Item.Properties().tab(READItemGroup.READ)));
-	 */
 
 }

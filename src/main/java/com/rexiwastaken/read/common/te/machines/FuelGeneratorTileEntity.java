@@ -1,4 +1,6 @@
-package com.rexiwastaken.read.common.te;
+package com.rexiwastaken.read.common.te.machines;
+
+import java.util.List;
 
 import javax.annotation.Nullable;
 
@@ -6,6 +8,7 @@ import com.rexiwastaken.read.RexisEnergyAndDecor;
 import com.rexiwastaken.read.common.block.FuelGeneratorBlock;
 import com.rexiwastaken.read.common.container.FuelGeneratorContainer;
 import com.rexiwastaken.read.common.recipe.FuelGeneratorRecipe;
+import com.rexiwastaken.read.common.te.LockableSidedInventoryTileEntity;
 import com.rexiwastaken.read.core.helper.ModHelper;
 import com.rexiwastaken.read.core.init.RecipeInit;
 import com.rexiwastaken.read.core.init.TileEntityTypesInit;
@@ -26,6 +29,7 @@ import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraftforge.common.util.Constants;
 
 public class FuelGeneratorTileEntity extends LockableSidedInventoryTileEntity implements ITickableTileEntity {
+	List<ItemStack> allItems = null;
 	private ITextComponent customName;
 	public static int slots = 2;
 	protected NonNullList<ItemStack> items = NonNullList.withSize(slots, ItemStack.EMPTY);
@@ -35,7 +39,6 @@ public class FuelGeneratorTileEntity extends LockableSidedInventoryTileEntity im
 	private static final int[] SLOTS_FOR_UP = new int[] { 0 };
 	private static final int[] SLOTS_FOR_DOWN = new int[] { 1 };
 	private static final int[] SLOTS_FOR_SIDES = new int[] { };
-	// private boolean couldAddToOutput;
 
 	public FuelGeneratorTileEntity(final TileEntityType<?> tileEntityTypeIn) {
 		super(tileEntityTypeIn, slots);
@@ -187,10 +190,9 @@ public class FuelGeneratorTileEntity extends LockableSidedInventoryTileEntity im
 	}
 	
 	@SuppressWarnings("static-access")
-	public NonNullList<ItemStack> getAllItems() {
-		NonNullList<ItemStack> allItems = NonNullList.withSize(this.slots, ItemStack.EMPTY);
+	public List<ItemStack> getAllItems() {
 		for (int i = 0; i <= this.slots - 1; ++i) {
-			allItems.add(i, this.getItem(i));
+			allItems.add(this.getItem(i));
 		}
 		return allItems;
 	}
